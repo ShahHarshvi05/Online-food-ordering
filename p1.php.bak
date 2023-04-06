@@ -1,0 +1,6 @@
+<table class="tbl-30">
+<tr>
+<td> <label> Firstname </label></td>
+<td> <input type= "text" name="fname" placeholder="enter your name" required></td>
+</tr>
+</table>
