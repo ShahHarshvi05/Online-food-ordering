@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+:root{
+    --green: lightgreen;
+    --black: black;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+   
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: auto;
+    scroll-padding-top:5.5rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    
+    display:block;
+    height:10px;
+    width: 10px;
+    
+}
+html::-webkit-scrollbar-track{
+    
+    border-radius: 0;
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(158, 158, 158);
+    border-radius: 5px;
+}
+html::-webkit-scrollbar-thumb:hover{
+    background:orangered;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: url("https://i0.wp.com/diplomartbrussels.com/wp-content/uploads/2020/09/food-background-images-94-images-in-co-381169-png-images-pngio-food-background-png-1440_619.png?fit=1440%2C619&ssl=1");
+    padding:1rem 7%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    size: 50px;
+    opacity:0.8;
+}
+header .logo{
+    color: var(--black);
+    font-size:2.5rem;
+    font-weight:bolder;
+}
+header .logo i{
+    color: orangered;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color:var(--light-color);
+
+}
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: orangered;
+}
+header .icons i,
+header .icons a{
+    cursor:pointer;
+    margin: left 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:black;
+    border-radius:50%;
+    background: #eee;
+
+}
+header .icons i:hover,
+header .icons a:hover{
+    color: #fff;
+    background: orangered;
+    transform: rotate(360deg);
+
+}
+header .icons #menu-bars{
+    display: none;
+}
+
+
+.container{
+    width: 100%;
+    background-color:#24262b;
+    margin: auto;
+}
+
+.row{
+    display:flex;
+    flex-wrap:nowrap;
+}
+ul{
+    list-style: none;
+}
+.navbar .feed{
+    cursor:pointer;
+}
+
+
+.container1{
+    position: relative;
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border:1px solid #444;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container1 .post{
+    display: none;
+}
+.container1 .text{
+    font-size: 25px;
+    color:#666;
+    font-weight: 500;
+}
+
+.container1 .edit{
+    position:absolute;
+    right:10px;
+    top:5px;
+    font: size 16px;
+    color: #666;
+    font-weight: 500;
+    cursor:pointer;
+}
+.container1 .edit:hover{
+    text-decoration:underline;
+    color: orangered;
+}
+.container1 .star-widget input{
+    display:none;
+}
+.star-widget label{
+    font-size: 40px;
+    color:#444;
+    padding: 10px;
+    float:right;
+    transition: all 0.2s ease;
+}
+section{
+    margin-left: 250px;
+    
+}
+
+section h2{
+    margin-top: 80px;
+    margin-left: 105px;
+    font-size: 40px;
+    display:inline-block;
+}
+section hr{
+    border:none;
+        height: 20px;
+        width: 90%;
+        height: 50px;
+        margin-top: 0;
+        border-bottom: 1px solid #1f1209;
+        box-shadow: 0 20px 20px -20px #333;
+        margin: -50px auto 10px;
+}
+
+section .dominos{
+    text-align: center;
+
+}
+
+
+section h4{
+    margin-left: 105px;
+    font-size: 30px;
+    color:orangered;
+}
+.veg .box-container{
+    margin: auto;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+}
+.nonveg .box-nonpizza{
+    margin: auto;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+}
+.pizzamania .box-mania{
+    margin:auto;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+
+}
+.currys .box-curry{
+    margin:auto;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    gap:5.5rem;
+
+}
+.currys .box-curry .box{
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+.currys .box-curry .box:hover{
+    transform : scale(1.1);
+}
+.currys .box-curry .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.currys .box-curry .box span{
+    font-size: 20px;
+}
+.pizzamania .box-mania .box{
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.pizzamania .box-mania .box:hover{
+    transform : scale(1.1);
+}
+.pizzamania .box-mania .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.pizzamania .box-mania .box span{
+    font-size: 20px;
+}
+.nonveg .box-nonpizza .box{
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.nonveg .box-nonpizza .box:hover{
+    transform: scale(1.1);
+}
+.nonveg .box-nonpizza .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.nonveg .box-nonpizza .box span{
+    font-size: 20px;
+}
+.veg .box-container .box{
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+    padding:2.5rem;
+    align-items: center;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.veg .box-container .box:hover{
+    transform: scale(1.1);
+}
+.veg .box-container .box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    
+}
+.veg .box-container .box span{
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background: orangered;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    color:white;
+}
+.sidebar{
+    margin-top: 1px;
+    position:fixed;
+    width: 200px;
+    height:100%;
+    left:0;
+    background:transparent;
+
+}
+.sidebar .text{
+    margin-top:5px;
+    color:white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+    background:transparent;
+    letter-spacing : 1px;
+}
+.sidebar .text i{
+    cursor:pointer;
+    color:black;
+    background:transparent;
+    
+  
+}
+.sidebar .text i:hover{
+    color:orangered;
+}
+.sidebar ul{
+    background: white;
+    height: 100%;
+    width: 100%;
+    list-style:none;
+    background:transparent;
+}
+.sidebar ul li{
+    line-height: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+}
+.sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 40px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    text-align: center;
+    background:transparent;
+
+}
+.sidebar ul li a:hover{
+    color: orangered;
+    background:rgb(184, 179, 179);
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-left: 10px solid orangered;
+    
+}
+.home{
+    text-align: center;
+    
+    
+}
+.home .veg .glow{
+    
+        font-size: 80px;
+        color:black;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+      
+    
+}
+
+.home .cont{
+    background:transparent;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.home .cont iframe{
+    
+    margin-top:80px;
+    margin:0 auto;
+    width:50%;
+    border:none;
+    border-radius: 10px;
+    
+}
+
+
+
+/*media queries*/
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding: 1rem 2rem;
+    }
+    footer{
+        padding: 1rem 2rem;
+    }
+
+}
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0;right:0;
+        background:#fff;
+        border-top:.1rem solid rgba(0,0,0,.2);
+        border-bottom:.1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0,100% 100%,0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size:2rem;
+        background: #eee;
+    }
+    
+.home .veg h2 img{
+    margin: auto;
+    
+}
+.home .cont iframe{
+    width: 400px;
+}
+
+
+
+    
+}
+@media (max-width: 991px){
+    html{
+        font-size: 50%;
+
+    }
+}
+
+#logo img
+   {
+     height:60px;
+     margin: 3px 2px;
+     border-radius:50px;
+   }
+  body
+   {
+    content:"";
+    background: url("https://www.transparenttextures.com/patterns/black-paper.png");
+    background-position: center;
+    background-repeat: none;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+
+   }
+
+   .fa-shopping-cart a,.fa-shopping-cart{
+    color: orangered;
+   }
+   .fa-shopping-cart i:hover{
+    color:white;
+}

@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+   }
+   ::root
+   {
+     --navbar-height: 49px;
+   }
+   #logo{
+     margin: 34px 35px;
+   }
+   #logo img
+   {
+     height:90px;
+     margin: 3px 6px;
+     border-radius:50px;
+   }
+   #navbar{
+     
+     display:flex;
+     align-items: center;
+     position: relative;
+     top: 0px;
+   }
+   #navbar ul 
+   {
+     display:flex;
+   }
+   #navbar li
+   {
+     list-style:none;
+     font-size: 1.5 rem;
+   }
+   #navbar li a {
+     display:block;
+     padding: 3px 22px;
+     border-radius: 20px;
+     text-decoration : none;
+     color:white;
+     Font-weight:bold;
+   }
+   #navbar::before
+   {
+     content:"";
+     background-color:black;
+     position:absolute;
+     height:260%;
+     width:100%;
+     z-index:-1;
+     opacity:0.5;
+   }
+   #navbar li a:hover {
+     color:black;
+     background-color:white;
+     cursor: pointer;
+   }
+   #home{
+     display:flex;
+     flex-direction:column;
+     padding: 5px 100px;
+     justify-content:center;
+     align-items: center; 
+     Text-align:center;
+     height:90px;
+   }
+   
+   #home::before
+   { 
+     content:"";
+     background: url("https://i0.wp.com/diplomartbrussels.com/wp-content/uploads/2020/09/food-background-images-94-images-in-co-381169-png-images-pngio-food-background-png-1440_619.png?fit=1440%2C619&ssl=1");
+     background-position: center;
+     background-repeat:none;
+     position:absolute;
+     height:100%;
+     width:100%;
+     z-index:-1;
+     opacity:0.70;
+   }
+   .btn
+   {
+     padding: 6px 20px;
+     border: 2px solid white;
+     background-color: brown;
+     color:white;
+     margin: 17px;
+     font-size:1 rem;
+     border-radius:10px; 
+     cursor:pointer;
+   }
+   
+   .center
+   {
+     text-align:center;
+     padding:15px;
+   }
+   .h-secondary
+   {
+     font-size:2.0rem;
+     padding: 1px;
+   }
+   
+   #services
+   {
+     margin:30px;
+     display:flex;
+   }
+   #services .box
+   {
+     justify-content: center;
+     align-items:center;
+    border: 2px solid Brown;
+     padding:34px;
+     margin: 6px 25px;
+     border-radius:33px;
+     background-color: #ede7e6;
+    
+   }
+   #services .box img
+   {
+    display:block;
+    height:150px;
+    margin:auto;
+   }
+   .h1-primary
+   {
+     font-family: 'Bree Serif' ,serif;
+     font-size:35px;
+     margin:18px;
+   }
+   #client-section
+   {
+     height:344px;
+   }
+   #client-section::before
+   {
+     content:"";
+     position:absolute;
+     background:url("http://cdn.cnn.com/cnnnext/dam/assets/200401170445-01-best-turkish-foods-piyaz.jpg");
+   width:100%;
+   height:80%;
+   z-index:-1;
+   opacity:0.6;
+   }
+   #clients
+   {
+     display:flex;
+     justify-content:center;
+     align-items:center;
+   }
+   #clients img 
+   {
+     height:150px;
+     padding: 12px;
+     margin:10px 25px;
+   }
+   
+   
+   #contact
+   {
+     position:relative;
+   }
+   #contact::before
+   {
+     content:"";
+     position:absolute; background:url("https://www.ontario.ca/sites/default/files/grocery-trip-foods_9.jpg") no-repeat center center/cover;
+    width:100%;
+    height:120%;
+    z-index:-1;
+    opacity:0.7;
+   }
+   footer
+   {
+     background: Black;
+     color:white;
+     padding: 9px 20px;
+   }
+   #contact
+   {
+     display: flex;
+     flex-direction:column;
+     justify-content: center;
+     align-items:center;
+     padding-bottom:34px;
+   }
+   #contact-box input, #contact-box textarea
+   {
+     width: 100%;
+     padding: 0.5rem;
+     margin:15px;
+     border-radius:9px;
+     font-size:1.1rem;
+   }
+   #contact-box form
+   {
+     width:100%;
+   }
+   #contact label
+   {
+     Font-size: 1.1rem;
+   }
+   #odr a 
+   {
+    text-decoration: none;
+   }
+   
+   
+   
+  
